@@ -13,7 +13,7 @@ You can duplicate the sol project file on Remix IDE and deploy it to interact wi
 ## Authors
 
   
-Harshit Kaundal
+[Harshit Kaundal](https://twitter.com/HarshitKaundal)
 
 ## License
 
