@@ -10,7 +10,14 @@ contract FranklinToken is ERC20, ERC20Burnable, Ownable {
         _mint(msg.sender, 100);
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
+    function customMint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
+    function customBurnTokens(uint amount) public {
+        _burn(msg.sender, amount);
+    }
+    function customTransferTokens(address to, uint256 amount) public {
+        _transfer(msg.sender,to,amount);
+    }
 }
+
